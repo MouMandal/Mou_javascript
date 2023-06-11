@@ -1,0 +1,102 @@
+/*alert,prompt,confirm in js*/
+/*how to show the time of while,do while and for loop*/
+// console.time("forloop");
+// for ( let i= 0; i < 5; i++) {
+//     console.log(23);
+// }
+// console.timeEnd("forloop")
+
+
+// console.time("doloop")
+// let i = 0;
+// do {
+//     console.log("hello");
+//     i++;
+// } while (i < 5);
+// console.timeEnd("doloop");
+
+
+// console.time("whileloop")
+// let j= 0;
+// while (j < 5) {
+//     console.log(14);
+//     j++;
+// }
+// console.timeEnd("whileloop");
+
+// alert ("Enter the value of a");
+// let a = prompt("Enter a here");
+// a = Number.parseInt(a);
+// alert("you r number is " + typeof (a))
+
+
+/*how to work alert ,prompt and confirm*/
+//  alert ("Enter the value of a");
+// let a = prompt("Enter a here");
+// a = Number.parseInt(a);
+// alert("your number is " + typeof (a));
+// let write = confirm("please write the nos");
+// if (write) {
+//     document.write(a);
+// }
+// else {
+//     document.write("Please allow me");
+// }
+
+
+/*DOM ,BOM and Window object*/
+// window.console.warn(window);
+// console.warn(document.body);
+// document.body.style.background = "Red";
+
+
+/*practice set*/
+// let age = prompt("Enter your age");
+// age = Number.parseInt(age);
+// const canDrive = (age) => {
+//     return age >= 18 ? true : false;
+// }
+// if (canDrive(age)) {
+//     alert("you can drive");
+// }
+// else {
+//     alert("you cannot drive");
+// }
+
+
+
+// let runagain = true;
+// const canDrive = (age) => {
+//     return age >= 18 ? true : false;
+// }
+// while (runagain) {
+//     let age = prompt("Enter your age");
+//     age = Number.parseInt(age);
+//     if (canDrive(age)) {
+//         alert("you can drive");
+//     }
+//     else {
+//         alert("you cannot drive");
+//     }
+//     runagain = confirm("Do you want to play again");
+// }
+  
+  
+// let age = prompt("Enter your age");
+// age = Number.parseInt(age);
+// if (age < 0) {
+//     console.error("please enter a valid age");
+      
+// }
+
+
+// let a = prompt("Enter the number");
+// a = Number.parseInt(a);
+// if (a > 4) {
+//     location.href = "https://google.com";
+// }
+
+
+
+// let color = prompt("Enter the page background color");
+// document.body.style.background = color;
