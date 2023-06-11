@@ -1,0 +1,185 @@
+/*Array in js*/
+
+// let marks = [40, 45, 46, 47];
+// for (i = 0; i <= Array.length; i++){
+
+// }
+// console.warn(marks);
+
+
+/*toString()*/
+// let num = [3, 4, 5, 6];
+// console.warn(num.toString());
+
+/*Join*/
+// let sum = [4, 5, 6, 6];
+// console.warn(sum.join("_"));
+
+/*pop()*/
+// let nos = [4, 5, 6, 7];
+// console.warn(nos.pop());
+// console.warn(nos);
+
+/*push()*/
+// let index = [3, 4, 5, 6];
+// console.warn(index.push(9))
+// console.warn(index);
+
+/*shift()*/
+// const number = [4, 5, 6, 7, 8, 9, 10];
+// console.log(number.shift());
+// console.warn(number);
+
+/*unshift()*/
+// const fat = [5, 6, 7, 8,9,10];
+// const y = fat.unshift(14);
+// console.log(y, fat);
+
+/*delete()*/
+// let num = [1, 2, 3, 4, 5, 6, 7, 19];
+// console.warn(num.length);
+// delete num[0];
+// console.warn(num);
+
+
+/*concat()*/
+// let a = [4, 5];
+// let b = [6, 7];
+// let c = [8, 9];
+// let d = a.concat(b, c);
+// console.warn(d);
+
+/*sort()*/
+// const months = ["jan", "feb", "march", "april"];
+// months.sort();
+// console.log(months);
+
+/*sort in ascending order*/
+// let compareFn = (a,b) => {
+//     return a - b;
+// }
+// let sum = [3, 88, 5, 66, 77];
+// sum.sort(compareFn);
+// console.log(sum);
+
+
+/*sort in decending order*/
+// let compareFn = (a, b) => {
+//     return b-a;
+// }
+// let sum = [3, 88, 5, 66, 77];
+// sum.sort(compareFn);
+// console.log(sum);
+
+
+/*reverse()*/
+// let sum = [2, 4, 5, 6];
+// sum.reverse();
+// console.log(sum);
+
+
+/*splice()*/
+// const number = [4, 2, 3, 4, 5];
+
+// number.deletedvalues = number.splice(2, 1, 23, 24);;
+// console.warn(number);
+// console.warn(deletedvalues);
+
+/*slice()*/
+// const number = [4, 2, 3, 4, 5,6];
+
+// const sum=number.slice(2,5);;
+// console.warn(sum);
+
+/*Using Loops with Arrays*/
+// let num = [3, 5, 1, 2, 4];
+// for (i = 0; i <num.length; i++){
+//     console.warn(num[i]);
+// }
+
+/*foreach*/
+// let num = [3, 5, 1, 2, 4];
+// num.forEach((element) => {
+//     console.warn(element);
+//     console.warn(element * element);
+
+// })
+
+/*for-of*/
+// let num = [3, 5, 1, 2, 4];
+// for (let item of num) {
+//     console.warn(item);
+// }
+
+/*for-in*/
+// let num = [3, 5, 1, 2, 4];
+// for (let item in num) {
+//     console.warn(item);
+//     console.warn(num[item]);
+// }
+
+/*map()*/
+// const a = [40, 44, 48, 50];
+// const b = a.map((value) => {
+//     console.warn(value);
+//     return value + 1;
+// })
+// console.log(b);
+
+/*filter()*/
+// let arr2 = [45, 23, 21, 0, 3, 5];
+// let a2 = arr2.filter((value) => {
+//     return value < 10;
+// })
+// console.warn(a2);
+
+/*reduce*/
+// let arr3 = [1, 2, 3, 5, 2, 1];
+
+// const reduce_func=((h1, h2)=> {
+//     return h1 * h2;
+// })
+// let arr = arr3.reduce(reduce_func);
+// console.warn(arr);
+
+
+
+
+/*pratice set*/
+// let new_arr = [1, 2, 3, 4];
+// let n = prompt("Enter the nos");
+// n = Number.parseInt(n);
+// new_arr.push(n);
+// console.warn(new_arr);
+
+// let new_arr = [1, 2, 3, 4];
+// let n;
+// do {
+//     n = prompt("Enter the nos");
+//     n = Number.parseInt(n);
+//     new_arr.push(n);
+   
+// } while (n != 0);
+// console.warn(new_arr);
+
+
+
+// let arr = [2, 4, 5, 6,10];
+// let n = arr.filter((x) => {
+//     return x%10==0
+// })
+// console.warn(n);
+
+// let arr = [3, 4, 21, 1];
+// let b = arr.map((a) => {
+//     return a * a;
+// })
+// console.log(b);
+
+// let fact = [1, 2, 3, 4, 5];
+// let b = fact.reduce((h1, h2) => {
+//     return h1 * h2;
+// })
+// console.warn(b);
+
+
