@@ -1,0 +1,60 @@
+/*function is js*/
+
+// function myfunc(x, y) {
+//     console.log("Done");
+//     return x + y;
+
+
+// }
+// let a = 40;
+// let b = 90;
+// let c = 20;
+// let d = 100;
+
+// console.log(`The number is`, myfunc(a, b));
+// console.log(`The number is`, myfunc(b, c));
+// console.log(`The number is`, myfunc(c, d));
+// console.log(`The number is`, myfunc(d, a));
+
+
+/*fat arror function in js*/
+
+// const sum = (p, q) => {
+//     return p + q;
+// }
+// console.log(sum(9,7));
+
+/*problem 1*/
+// let student = {
+//     harry: 98,
+//     rohan: 70,
+//     akash:7,
+// }
+// for (i = 0; i < Object.keys(student).length; i++){
+//     console.log("The marks of " + Object.keys(student)[i] + " are " +student[ Object.keys(student)[i]]);
+// }
+
+/*problem 2*/
+// let student = {
+//     harry: 98,
+//     rohan: 70,
+//     akash: 7,
+// }
+// for (let b in student) {
+//     console.log("marks of " + b + " are " + student[b]);
+// }
+
+/*problem 3*/
+// let correct_number = 45;
+// let i;
+// while (i != correct_number) {
+//     console.warn("Try again");
+//     i = prompt("Enter a number");
+// }
+// console.warn("you have entered a correct_number");
+
+/*problem 4*/
+// const mean = (a, b, c, d) => {
+//     return (a + b + c + d)/4;
+// }
+// console.warn(mean(4, 5, 6, 7));
