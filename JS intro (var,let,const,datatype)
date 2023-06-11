@@ -1,0 +1,88 @@
+// console.log("my name is mou mandal \n");
+// let a = 45;
+// console.log(a);
+// a = "mou";
+// console.log(a);
+
+/*variable,let and constant in js*/
+// var e = 45;
+// e = 40;
+// console.log(e);
+// const f = 45;
+// console.log(f);
+// var d = "mou";
+// {
+//     let d = "this";
+//     console.log(d);
+// }
+// console.log(d);
+
+/*primitive datatype and non primitive datatype*/
+/*nn bb ss u are primitive datatype*/
+// let a = 30;
+// let b = null;
+// let c = true;
+// let d = BigInt("24") + BigInt("43");
+// let e = "rimi mandal";
+// let m = Symbol("i am a nice symbol");
+// let n;
+// console.log(a, b, c, d, e, m, n);
+// console.log(typeof (a));
+// console.log(typeof (b));
+// console.log(typeof (c));
+// console.log(typeof (d));
+// console.log(typeof (e));
+// console.log(typeof (m));
+// console.log(typeof(n));
+
+/*object is a non primitive datatype*/
+// const item = {
+//     "harry": 45,
+//     "rita": null
+
+// }
+// console.log(item["harry"]);
+
+
+/*chapter 1 pratice set */
+/*question 1*/
+// let a = "Mou";
+// let b = 45;
+// console.log(a + b);
+
+/*question 2*/
+// console.log(typeof (a + b));
+// console.log(typeof (a));
+// console.log(typeof (b));
+
+/*question 3*/
+// const item = {
+//     address: "tarakeswar",
+//     name: "mou mandal",
+//     pin: 712414,
+//     email: "mandalmou.2004@gmail.com",
+// }
+// item = 42; //this is wrong we can not change it//
+// console.log(item);
+
+
+/*question 4*/
+// const item = {
+//     address: "tarakeswar",
+//     name: "mou mandal",
+//     pin: 712414,
+//     email: "mandalmou.2004@gmail.com"
+// }
+// item["father"] = "sukumar mandal";
+// console.log(item);
+
+/*question 5 */
+// const dictonary = {
+//     Abnegation: "Denial, renunciation of a doctrine or belief.",
+//     Ambigue: "An ambiguous expression or statement.",
+//     Athleisure: "Comfortable and casual footwear & clothing designed for exercise and rigorous activity.",
+//     Broigus: "Angry or irritated.",
+//     Ebullient:"Unrestrained joyously.",
+// }
+// console.log(dictonary.Abnegation);
+
