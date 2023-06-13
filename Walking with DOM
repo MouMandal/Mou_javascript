@@ -1,0 +1,90 @@
+
+/*firstChild,lastChild,childNodes in js*/
+<body><div><div class="first">first</div><div class="second">second</div>
+    </div>
+
+//onsole.warn(document.body.firstChild);
+//console.warn(document.body.lastChild);
+//console.warn(document.body.childNodes);
+
+
+/*firstChild,lastChild,childNodes,parentElement,parentNode,nextSibling,firstElementChild in js*/
+<nav>
+<ul>
+           <li>Home</li>
+            <li>About</li>
+            <li>Content</li>
+        </ul>
+    </nav>
+    <p>Hello my name is mou mandal</p> 
+
+// console.log(document.body.firstChild);
+// a = document.body.firstChild;
+// console.log(a.parentNode);
+// console.log(a.parentElement);
+// console.log(a.firstChild.nextSibling);
+
+//const back_ground = () => {
+    document.body.firstElementChild.style.backgroundColor = "red";
+}
+//back_ground();
+//let b = document.body;
+//console.log("The first child of b is:", b.firstChild);
+//console.log("The first element of child b is :",b.firstElementChild);
+
+
+/*table navigation in js*/
+ <div class="container">
+    <table class="table">
+        <caption>This is an canption</caption>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </div>
+    
+// let t = document.body.firstElementChild.firstElementChild;
+// console.log(t);
+// console.log(t.rows);
+// console.log(t.caption);
+// console.log(t.tHead);
+// console.log(t.tHead.firstElementChild);
+// console.log(t.tHead.firstElementChild.firstElementChild);
+// console.log(t.tFoot);
+// console.log(t.tBodies);
+// console.log(t.rows[2].rowIndex);
+
+    
+    
+    
+
+
+
+
+
+
