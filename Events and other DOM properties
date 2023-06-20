@@ -3,7 +3,6 @@
     <span id="first" hidden><b>hii</b>hey i am span</span>
 </body>
 
-
 console.log(document.getElementsByTagName('span')[0]);
 console.dir(document.getElementsByTagName('span')[0]);
 console.log(document.body.firstChild.nodeName);
@@ -17,5 +16,45 @@ document.body.textContent;
 first.hidden = false;
 
 
+
+<body>
+   <div id="first" class="hey" data-push="keyboard" data-pop="laptop">hey i am first constainer</div>
+</body>
+
+let first = document.getElementById("first");
+console.log(first);
+let a = first.getAttribute("class");
+console.log(a);
+console.log(first.hasAttribute("class"));
+console.log(first.hasAttribute("index"));
+first.setAttribute("hidden", "true");
+first.setAttribute("class", "true sachin");
+first.removeAttribute("class");
+console.log(first.attributes);
+console.log(first.dataset);
+console.log(first.dataset.push);
+console.log(first.dataset.pop);
+
+
+<body>
+    I am start of this container(outer)
+   <div class="container">
+    I am start of this container(inner)
+    <div id="first">I am a first element</div>
+    I am end of this container(inner)
+   </div>
+    I am start of this container(outer)
+</body>
+
+
+let a = document.getElementsByTagName("div")[0];
+/*a.innerHTML = a.innerHTML +"<i>hii everyone</i>";*/
+let div = document.createElement("div");
+div.innerHTML = "<i>hii everyone</i>";
+a.appendChild(div);
+a.prepend(div);
+a.before(div);
+a.after(div);
+a.replaceWith(div);
 
 
