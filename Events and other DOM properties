@@ -68,3 +68,34 @@ first.insertAdjacentHTML('beforeend', '<div class="test"> beforeend</div>');
 first.insertAdjacentHTML('afterbegin', '<div class="test"> afterbegin</div>');
 first.insertAdjacentHTML('afterend', '<div class="test">afterend</div>');
 // first.remove();
+
+
+<head>
+<style>
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+.yellow {
+    background-color: yellow;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+    <div id="first" class="yellow">
+        Hello everyone
+    </div>
+</body>
+
+first.className = "text-black red";
+first.classList.add("red");
+first.classList.remove("red");
+first.classList.contains("red");
+first.classList.toggle("red");
