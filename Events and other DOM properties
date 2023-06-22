@@ -99,3 +99,57 @@ first.classList.add("red");
 first.classList.remove("red");
 first.classList.contains("red");
 first.classList.toggle("red");
+
+
+/*setTimeout and clearTimeout*/
+document.write("hello");
+let a = setTimeout(() => {
+    alert("hii my name is mou mandal");
+
+}, 2000);
+let b = prompt("do you want to run the setTimeout?");
+if ("n" == b) {
+    clearTimeout(a);
+}
+console.log(a);
+
+/*example*/
+const sum = ((a, b, c) => {
+    console.warn("yes i am running "+ (a + b + c));
+})
+setTimeout(sum, 1000, 1, 4, 5);
+
+/*setInterval and clearInterval*/
+let a=setInterval(() => {
+    console.log("hello everyone");
+}, 1000);
+let b = prompt("do you want to run the setInterval?");
+if ("n" == b) {
+    clearInterval(a);
+}
+
+/*example*/
+const sum = ((a, b, c) => {
+    console.warn("yes i am running "+ (a + b + c));
+})
+setInterval(sum, 1000, 1, 4, 5);
+
+/*onmouseenter and onclick*/
+<body>
+    <div class="container" onmouseenter="console.log('mouse enter')">
+    <button onclick="alert('hello')">click me</button>
+    </div>
+</body>
+
+/*example*/
+<body>
+    <div class="container">
+    <button>click me</button>
+    </div>
+</body>
+
+let a = document.getElementsByClassName("container")[0];
+a.onclick=(() => {
+    let b = document.getElementsByClassName("container")[0];
+    b.innerHTML = "hello world";
+})
