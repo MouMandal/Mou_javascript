@@ -153,3 +153,62 @@ a.onclick=(() => {
     let b = document.getElementsByClassName("container")[0];
     b.innerHTML = "hello world";
 })
+
+
+
+<body>
+    <button id="btn">click me</button>
+</body>
+
+let x = function (e) {
+    // console.log(e.target);
+    // console.warn(e.type); 
+    // console.log(e.clientX, e.clientY);
+    alert("Hello world 1!"); 
+}
+let y = function (e) {
+    alert("Hello world 2!");
+}
+btn.addEventListener('click', x);
+btn.addEventListener('click', y);
+let a = prompt("Enter you favourite number");
+if (a == 2) {
+    btn.removeEventListener('click', x);
+}
+
+
+/*how to change the background and div background color using js*/
+
+<body>
+    <div id="container">
+    </div>
+</body>
+
+<style>
+div {
+            border: 3px solid;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+        }
+
+        #container {
+            height: 20vh;
+            width: 8vw;
+        }
+</style>
+
+let a = document.getElementById("container");
+a = setTimeout(() => {
+    document.body.style.backgroundColor = "green";
+}, 2000);
+
+document.querySelector("div").addEventListener("mouseenter", function () {
+    document.querySelector("div").style.backgroundColor = "red";
+})
+
+document.querySelector("div").addEventListener("mouseleave", function () {
+    document.querySelector("div").style.backgroundColor = "yellow";
+})
