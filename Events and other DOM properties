@@ -16,7 +16,6 @@ document.body.textContent;
 first.hidden = false;
 
 
-
 <body>
    <div id="first" class="hey" data-push="keyboard" data-pop="laptop">hey i am first constainer</div>
 </body>
@@ -212,3 +211,43 @@ document.querySelector("div").addEventListener("mouseenter", function () {
 document.querySelector("div").addEventListener("mouseleave", function () {
     document.querySelector("div").style.backgroundColor = "yellow";
 })
+
+
+*synchronous programming*/
+let a = prompt("what is your name?");
+let b = prompt("what is your age?");
+let c = prompt("what is your favourite color?");
+console.log(" my name is " + a +" my age is "+ b +" my favourite color is "+ c);
+
+/*Asynchronous programming*/
+console.log("start");
+setTimeout(() => {
+    console.log("hello i am good");
+}, 1000);
+console.log("End");
+
+/*how to callback function and error handling*/
+function loadScript(src, callback) {
+    var script = document.createElement("script");
+    script.src = src;
+    script.onload = function () {
+        console.log("loaded script with SRC:" + src);
+        callback(null, src);
+    }
+    script.onerror = function () {
+        console.log("Error loading script with src:" + src);
+        callback(new Error("src got some error"));
+    }
+    document.body.appendChild(script);
+}
+function hello(error, src) {
+    if (error) {
+        console.log(error);
+        return;
+    }
+    alert('hello world' + src);
+}
+function goodmorning(src) {
+    alert('goodmorning' + src);
+}
+loadScript("https://cdn.jsdedfglivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js", hello);
