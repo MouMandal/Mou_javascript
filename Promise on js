@@ -166,3 +166,69 @@ let p2 = new Promise((resolve, rejects) => {
 // })/*This method is always waiting for resolve not rejects*/
 
 
+
+/*Async_Await in js*/
+async function harry() {
+    let Delhi = new Promise((resolve, rejects) => {
+        setTimeout(() => {
+            resolve("45 deg");
+        }, 1000);
+    })
+    let Mumbai = new Promise((resolve, rejects) => {
+        setTimeout(() => {
+            resolve(" 40 deg");
+        }, 5000);
+    })
+    console.log("fetching delhi weather please wait");
+    let delhi = await Delhi;
+    console.log("weather is display " + delhi);
+    console.log("fetching mumbai weather please wait");
+    let mumbai = await Mumbai;
+    console.log("weather is display " + mumbai);
+    return [delhi, mumbai];
+}
+const cherry=(() => {
+    console.log("hey i am cherry i am  waiting");
+})
+const main1 = async () => {
+    console.log("Welcome to weather control room");
+    let a =  await harry();
+    let b = await cherry();
+}
+ main1();
+
+
+/*Error handling try and catch in js*/
+setTimeout(() => {
+    console.log("hacking ram's insta password.....");
+}, 1000);
+try {
+    console.log(ram);
+}
+/*try {
+    setTimeout(() => {
+        try {
+            console.log("hii");
+        }
+        catch (err) {
+            console.log("happy" + err);
+        }
+    }, 1000);
+    console.log(ram);
+}*/
+catch (error) {
+    console.log("hurray "+error);
+}
+setTimeout(() => {
+    console.log("hacking ram's eamil id.....");
+}, 1000);
+
+setTimeout(() => {
+    console.log("hacking ram's fackbook id.....");
+}, 1000);
+
+setTimeout(() => {
+    console.log("User name and password of ram's (+91 8509094606)please wait......");
+}, 1000);
+
+
