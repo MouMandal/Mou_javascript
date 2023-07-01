@@ -93,3 +93,76 @@ p1.then((value) => {
 })
 
 
+/*Attaching multiple handlers to a Promise*/
+let promise = new Promise((resolve, reject) => {
+    // alert("hey i am not resolved");
+    setTimeout(() => {
+        resolve(12);
+    }, 1000);
+})
+promise.then(() => {
+    console.log("congratulations this promise is resolved");
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve (4);
+        }, 4000);
+    })
+}).then((value) => {
+    console.log(value);
+})
+promise.then(() => {
+    console.log("hurray");
+})
+
+
+/*promise APi*/
+let p = new Promise((resolve, rejects) => {
+    setTimeout(() => {
+        resolve(12);
+        /*reject(1)*/
+    }, 1000);
+})/* .then((value) => {
+        console.log(value);
+})*/
+
+let p1 = new Promise((resolve, rejects) => {
+    setTimeout(() => {
+        resolve(13);
+    }, 1000);
+})/*.then((value) => {
+    console.log(value);
+})*/
+
+let p2 = new Promise((resolve, rejects) => {
+    setTimeout(() => {
+        resolve(14);
+    }, 1000);
+})/*.then((value) => {
+    console.log(value);
+})*/
+
+/*Promise.all*/
+// let promice = Promise.all([p, p1, p2]);
+// promice.then((value) => {
+//     console.log(value);
+// })
+
+/*Promise.allSettled*/
+// let promice = Promise.allSettled([p, p1, p2]);
+// promice.then((value) => {
+//     console.log(value);
+// })
+
+/*Promise.race*/
+// let promice = Promise.race([p, p1, p2]);
+// promice.then((value) => {
+//     console.log(value);
+// })
+
+/*Promise.any*/
+// let promice = Promise.any([p, p1, p2]);
+// promice.then((value) => {
+//     console.log(value);
+// })/*This method is always waiting for resolve not rejects*/
+
+
