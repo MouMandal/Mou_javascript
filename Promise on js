@@ -232,3 +232,42 @@ setTimeout(() => {
 }, 1000);
 
 
+/*The error Object in js*/
+try {
+    /*harry;*/
+    /*throw new Error("mou is not good");*/
+    /*throw new ReferenceError("mou is not bad");*/
+    let age = prompt("Enter your age");
+    age = Number.parseInt(age);
+    if (age > 100) {
+        throw new ReferenceError("Invalid age");
+    }
+}
+catch (error) {
+    console.log(error.name);
+    console.log(error.message);
+    console.log(error.stack);
+}
+
+/*The finally clause in js*/
+/*let c = (() => {*/
+try {
+    let a = 0;
+    console.log(programme);
+    console.log("This programme is run successfylly");
+    /*return;*/
+}
+catch (error) {
+    console.log("This code will be not executed");
+}
+finally {
+    console.log("This code is always run successfully");
+}
+/*})
+c();
+console.log("end");*/
+
+
+
+
+
