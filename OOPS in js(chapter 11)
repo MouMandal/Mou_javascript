@@ -1,0 +1,155 @@
+/*OOPS in js*/
+/*prototype*/
+// let a = {
+//     name2: "harry",
+//     language: "javascript",
+//     run: () => {
+//         alert("run");
+//     }
+// }
+// console.log(a);
+// let p = {
+//     run: () => {
+//         alert("run");
+//     }
+// }
+// p.__proto__ = {
+//     name: "mou",
+// }
+// a.__proto__ = p;
+// a.run();
+// console.log(a.name);
+
+/*classes and objects in js*/
+// class Railwaryfrom{
+//     submit() {
+//         alert(`${this.name} ${"this from is submit"} ${this.num}`);
+//     }
+//     cancel() {
+//         alert(this.name + " this from is cancel by " +this.num);
+//     }
+//     fill(givenname,number) {
+//         this.name = givenname;
+//         this.num = number;
+//     }
+
+// }
+// let mouFrom= new Railwaryfrom();
+// mouFrom.fill("mou",56745);
+// let rimiFrom = new Railwaryfrom();
+// rimiFrom.fill("rimi",78964);
+// mouFrom.submit();
+// rimiFrom.submit();
+// rimiFrom.cancel();
+
+/*inheritace and extends keywords in js*/
+// class Animal {
+//     constructor(name, color) {
+//         this.name = name;
+//         this.color = color;
+//     }
+// run(){
+//     console.log(this.name + "is running");
+//     }
+// shout(){
+//     console.log(this.name + "is shouting");
+// }
+// }
+// class Monkey extends Animal{
+
+//     eatBanana() {
+//         console.log(this.name +" is eating banana");
+//     }
+//     hide() {
+//         console.log(`${this.name} is hiding`);
+//     }
+
+// }
+// let ani = new Animal("chimpu", "white");
+// let m = new Monkey("chimpu", "orange");
+// ani.shout();
+// m.eatBanana();
+// m.hide();
+
+/*constructors an super keyword in javascript*/
+// class Employee{
+//     constructor(name) {
+//         this.name = name;
+//         console.log(`${name}-Employee's constructor is here`);
+//     }
+//     login() {
+//         console.log(`Employee has logged in`);
+//     }
+//     logout() {
+//         console.log(`Employee has logged out`);
+//     }
+//     requestLeaves(leaves) {
+//         console.log(`Employee has requested ${leaves} leaves -Auto approved`);
+//     }
+// }
+// class Programmes extends Employee{
+//     constructor(name) {
+//         super(name);
+//         console.log(` ${name} This is a newly written constructor`);
+//     }
+//     // constructor(....args) {
+//     //     ...> if there is no constructor in the child class, this is created automatically
+//     //     super(...args)
+//     // }
+//     requestCoffee(x) {
+
+//         console.log(`Employee has requested ${x} coffees`)
+//     }
+//     requestLeaves(leaves) {
+//         super.requestLeaves(4);
+//         console.log(`one extra is granted`);
+//         /*console.log(`Employee has requested ${leaves+1} leaves (one extra)`);*/
+//     }
+// }
+// let e = new Programmes("Mou");
+// e.login();
+// e.requestLeaves(4);
+// e.requestCoffee(7);
+
+
+/*Static method in javascript*/
+// class Animal{
+//     constructor(name) {
+//         this.name = Animal.capitalize(name);
+//     }
+//     walk() {
+//         console.warn("Animal whose name  " +this.name+" is walking");
+//     }
+//     static capitalize(name) {
+//         return name.charAt(0).toUpperCase() + name.substr(1,name.length );
+//     }
+// }
+// j = new Animal("deer");
+// j.walk();
+
+/*getters,setters and instance Operator in javascript*/
+// class Animal{
+//     constructor(name) {
+//         this._name=name
+//     }
+//     get name() {
+//         return this._name;
+//     }
+//     set name(newName) {
+//         this._name=newName
+//     }
+// }
+// class Rabbit extends Animal{
+//     eatCarrot() {
+//         console.log("eating carrot");
+//     }
+// }
+// let a = new Rabbit("birds");
+// console.log(a.name);
+// a.name="parrot";
+// console.log(a.name);
+// let e = 90;
+// console.log(e instanceof Animal);
+// console.log(a instanceof Animal);
+// console.log(a instanceof Rabbit);
+
