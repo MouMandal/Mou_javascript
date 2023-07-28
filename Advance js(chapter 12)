@@ -1,0 +1,141 @@
+/*IIFE(Immediately Ivoked Function Expressions)*/
+// let a = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(456);
+//         }, 1000);
+
+
+//     })
+// }
+// (
+//     async () => {
+//         let b = await a();
+//         console.log(b);
+//         let c = await a();
+//         console.log(c);
+//         let d = await a();
+//         console.log(d);
+//     }
+
+// )();
+
+/*Destructuring assignment*/
+// let arr = [3, 5, 8,9,10,11,12];
+// let [a, b,c,d,...rest] = arr;
+// console.log(a, b, c, d, rest);
+
+// let { a, b } = { a: 1, b: 5 };
+// console.log(a, b);
+
+/*Spread Operator*/
+/*Ex1*/
+// let arr1 = [3, 5, 8];
+// let obj1 = { ...arr1 };
+// console.log(obj1);
+
+// /*Ex2*/
+// function sum(v1, v2, v3,v4,v5) {
+//     return v1 + v2 + v3+v4+v5;
+// }
+// const Numbers = [3, 4, 5, 6,2];
+// console.log(sum(...Numbers));
+
+
+// /*Ex3*/
+// let obj2 = {
+//     name: "mou",
+//     address: "tarakeswar",
+//     degree:"bca",
+// }
+// console.log({ ...obj2, name: "rimi", address: "kulbatpur" });
+
+// console.log({ name: "rimi", address: "kulbatpur", ...obj2, });/*This will print the obj2 object without changing any value*/
+
+
+
+/*function and block scope are called local scope*/
+/*block scope*/
+// {
+//     let a = 8;/*let is a block scope*/
+// }
+// console.log(a);
+
+/*function scope*/
+// let p = 90;
+// function ax() {
+//     let a = 8;
+//     console.log(a);
+// }
+// ax();
+// console.log(p);
+
+
+/*Hoisting in javascript*/
+// let b;
+// /*Following two lines will run successfully due to javascript hoisting*/
+// console.log(a);
+// greet();
+// function greet() {
+//     console.log("good morning");
+// }
+// let b = 20;
+// var a = 9;/*Delcaration hoisted to the top but initialixation is not*/
+// console.log(a);
+// console.log(b);
+
+/*Closure in js*/
+// function init() {
+//     var name = "mozilla";
+//     function displayName() {
+//         console.log(name);
+//     }
+//     name = "mou";
+//     return displayName;
+// }
+// let c = init();
+// c();
+
+// function returnFunc() {
+
+//     const x = () => {
+//         let a = 1;
+//         console.log(a);
+//         const y = () => {
+//             // let a = 2;
+//             console.log(a);
+//             const z = () => {
+//                 // let a = 3;
+//                 console.log(a);
+//             }
+//             z();
+//         }
+//         a = 9999;
+//         y();
+//     }
+//     return x;
+// }
+// let a = returnFunc();
+// a();
+
+
+/*Arrow Functions in js*/
+// const sayHello = (name, greeting) => {
+//     console.log(greeting + "" + name);
+// }
+
+
+// const x = {
+//     name: "mou",
+//     role: "js Developer",
+//     exp: 1,
+//     show: function () {
+//         setTimeout(() => {
+//             console.log(`The name is ${this.name}`)
+//         }, 1000)
+//     }
+
+// }
+// x.show();
+
+
