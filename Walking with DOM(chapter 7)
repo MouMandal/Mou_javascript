@@ -2,7 +2,7 @@
 <body><div><div class="first">first</div><div class="second">second</div>
     </div>
 
-//onsole.warn(document.body.firstChild);
+//console.warn(document.body.firstChild);
 //console.warn(document.body.lastChild);
 //console.warn(document.body.childNodes);
 
